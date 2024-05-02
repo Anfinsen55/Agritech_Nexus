@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__, static_url_path='/static')
 
 # load_dotenv()
-genai.configure(api_key="AIzaSyDdIimoQuikBlidQlPLScVPH3x2UTfbCHM")
+genai.configure(api_key="YOUR API KEY")
 
 def get_gemini_response(input_prompt, image):
     model = genai.GenerativeModel('gemini-pro-vision')
